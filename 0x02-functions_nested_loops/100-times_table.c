@@ -3,8 +3,8 @@
 /**
  * print_times_table - Check main
  * @n: An integer
- * Description: Function that prints n times table
- * Return: 0 if n greater than 15 or less than 0
+ * Description: Prints times table of n
+ * Return: 0 if n is greater than 15 or less than 0
  */
 void print_times_table(int n)
 {
@@ -19,38 +19,5 @@ void print_times_table(int n)
 				putformat(i * j);
 			_putchar('\n');
 		}
-	}
-}
-
-/**
- * putformat - formatted characters to output
- * @n: number to format
- * Return: nothing
- */
-void putformat(int n)
-{
-	if (n <= 9)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(n + '0');
-	}
-	else if (n > 9 && n <= 99)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
-	}
-	else
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(n / 100 + '0');
-		_putchar(n / 10 % 10 + '0');
-		_putchar(n % 10 + '0');
 	}
 }
