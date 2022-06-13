@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * function to generate random password
- * of any length
+ * function to generate password
  */
-void 101-crackme(int N)
+void generatepw(int N)
 {
     // Initialize counter
     int i = 0;
@@ -59,17 +58,4 @@ void 101-crackme(int N)
             printf("%c", password[i]);
         }
     }
-}
-  
-// Driver Code
-int main()
-{
-    // Length of the password to
-    // be generated
-    int N = 10;
-  
-    // Function Call
-    101-crackme(N);
-
-    return 0;
 }
