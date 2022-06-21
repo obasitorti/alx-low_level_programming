@@ -1,1 +1,1 @@
-For the pointers project
+New readme
