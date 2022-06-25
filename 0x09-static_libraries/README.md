@@ -1,1 +1,0 @@
-Low level programming: Project 9 Static Libraries
